@@ -1,0 +1,12 @@
+# ToDo
+ToDo List é uma aplicação mobile de criação e controle de tarefas.
+Esse projeto é um dos desafios da trilha de React Native do Ignite, nosso bootcamp completo de especialização em React, React Native e Node.js.
+
+
+![Cover](https://github.com/eddyzera/todo/assets/60861927/bd8002b8-86cc-4b54-a241-9711fa5ec8ed)
+
+
+## Tecnologias
+- ReactNative
+- Typescript
+- Expo
