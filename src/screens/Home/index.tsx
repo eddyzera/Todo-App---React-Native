@@ -3,12 +3,16 @@ import { View } from 'react-native'
 import { styles } from './styles'
 import { Header } from '../../components/Header'
 import { AddTask } from '../../components/AddTask'
+import { HighLight } from '../../components/HighLight'
 
 export const Home: React.FunctionComponent = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.body}>
       <Header />
-      <AddTask />
+      <View style={styles.container}>
+        <AddTask />
+        <HighLight />
+      </View>
     </View>
   )
 }
