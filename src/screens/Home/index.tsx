@@ -5,6 +5,7 @@ import { Header } from '../../components/Header'
 import { AddTask } from '../../components/AddTask'
 import { HighLight } from '../../components/HighLight'
 import { EmptyContainer } from '../../components/EmptyContainer'
+import { Task } from '../../components/Task'
 
 export const Home: React.FunctionComponent = () => {
   return (
@@ -13,7 +14,7 @@ export const Home: React.FunctionComponent = () => {
       <View style={styles.container}>
         <AddTask />
         <HighLight />
-        <EmptyContainer />
+        <Task />
       </View>
     </View>
   )

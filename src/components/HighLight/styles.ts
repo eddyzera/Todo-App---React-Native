@@ -6,8 +6,8 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingBottom: 20,
-    borderColor: '#333333',
-    borderBottomWidth: 1,
+    // borderColor: '#333333',
+    // borderBottomWidth: 1,
     marginTop: 33
   },
   containerHighlight: {
