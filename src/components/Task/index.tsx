@@ -9,7 +9,7 @@ export const Task: React.FunctionComponent = () => {
     <View style={styles.container}>
       <CheckBox />
       <Text style={styles.text}>Integer urna interdum massa libero auctor neque turpis turpis semper.</Text>
-      <Feather name="trash-2" size={32} color="#808080" />
+      <Feather name="trash-2" size={17} color="#808080" />
     </View>
   )
 }

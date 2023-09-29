@@ -10,10 +10,10 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   text: {
-    width: 235,
+    width: '80%',
     fontSize: 14,
     color: '#F2F2F2'
   },
