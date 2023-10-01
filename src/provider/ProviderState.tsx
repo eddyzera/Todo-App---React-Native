@@ -15,7 +15,7 @@ interface ProviderStateProps {
   children: ReactNode
 }
 
-const ProviderStateContext = createContext<ProviderStateContextProps>({ 
+export const ProviderStateContext = createContext<ProviderStateContextProps>({ 
   tasks: [], 
   addNewTask: ()=> {} 
 })
