@@ -9,8 +9,9 @@ import {
 } from 'react-native'
 import Icon from 'react-native-vector-icons/AntDesign'
 import { useAppContext } from '../../hooks/useAppContext'
-import { styles } from './styles'
 import { TaskProps } from '../../provider/ProviderState'
+import { createUUID } from './utils/generate'
+import { styles } from './styles'
 
 export const AddTask: React.FunctionComponent = () => {
   const [ task, setTask ] = useState<string>('')
@@ -18,7 +19,7 @@ export const AddTask: React.FunctionComponent = () => {
 
   const handleCreateNewTask = () => {
     const taskObj = {
-      id: '',
+      id: createUUID(),
       title: task,
       checked: false
     } as TaskProps
@@ -27,7 +28,6 @@ export const AddTask: React.FunctionComponent = () => {
       Alert.alert('Algo de errado', 'por favor ensira uma task')
       return;
     }
-
     addNewTask(taskObj)    
   }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, FlatList } from 'react-native'
 import { styles } from './styles'
 import { Header } from '../../components/Header'
 import { AddTask } from '../../components/AddTask'
@@ -17,7 +17,16 @@ export const Home: React.FunctionComponent = () => {
       <View style={styles.container}>
         <AddTask />
         <HighLight />
-        <Task />
+        { tasks.length === 0 ? (
+          <EmptyContainer />
+        ) : (
+          <FlatList
+          data={tasks}
+          renderItem={({ item }) => (
+            <Task/>
+          )}
+        />
+        ) }
       </View>
     </View>
   )
