@@ -1,7 +1,7 @@
 import React, { createContext, useState, ReactNode } from 'react'
 
-type TaskProps = {
-  uuid: string,
+export type TaskProps = {
+  id: string,
   title: string,
   checked: boolean
 }
