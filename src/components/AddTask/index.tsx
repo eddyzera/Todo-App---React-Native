@@ -28,7 +28,8 @@ export const AddTask: React.FunctionComponent = () => {
       Alert.alert('Algo de errado', 'por favor ensira uma task')
       return;
     }
-    addNewTask(taskObj)    
+    addNewTask(taskObj)
+    setTask('')    
   }
 
   return (
@@ -38,6 +39,7 @@ export const AddTask: React.FunctionComponent = () => {
         placeholderTextColor="#808080"
         style={styles.input}
         onChangeText={setTask}
+        value={task}
       />
       <TouchableOpacity style={styles.buttonAddMore} onPress={handleCreateNewTask}>
         <Text>
