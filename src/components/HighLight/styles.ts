@@ -5,10 +5,8 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingBottom: 20,
-    // borderColor: '#333333',
-    // borderBottomWidth: 1,
-    marginTop: 33
+    marginTop: 33,
+    marginBottom: 20
   },
   containerHighlight: {
     flexDirection: 'row',

@@ -2,10 +2,15 @@ import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
   container: {
-    marginTop: 48,
+    paddingTop: 48,
+    paddingBottom: 48,
+    paddingLeft: 20,
+    paddingRight: 20,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 16
+    gap: 16,
+    borderColor: '#333333',
+    borderTopWidth: 1
   },
   img: {
     width: 56,
