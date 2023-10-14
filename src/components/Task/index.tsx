@@ -8,7 +8,7 @@ import { TaskProps } from '../../provider/ProviderState'
 export const Task: React.FunctionComponent<TaskProps> = ({ checked, id, title }) => {
   return (
     <View style={styles.container}>
-      <CheckBox />
+      <CheckBox id={id} />
       <Text style={styles.text}>{title}</Text>
       <Feather name="trash-2" size={17} color="#808080" />
     </View>
