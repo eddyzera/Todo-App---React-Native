@@ -46,8 +46,14 @@ export const ProviderState: React.FunctionComponent<ProviderStateProps> = ({
     setCreatedTasks(total)
   }
 
+  const calculateTotalTasksCompleted = () => {
+    const total = tasks.filter(task => task.checked).length
+    setCompletedTasks(total)
+  }
+
   useEffect(() => {
     calculateTotalTasksCreated()
+    calculateTotalTasksCompleted()
   }, [tasks])
 
   return (
