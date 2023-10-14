@@ -5,7 +5,7 @@ import { styles } from './styles'
 import { useAppContext } from '../../hooks/useAppContext'
 
 export const CheckBox: React.FunctionComponent<{ id: string }> = ({ id }) => {
-  const { tasks } = useAppContext()
+  const { tasks, updateTasks } = useAppContext()
   const [ isChecked, setIsChecked ] = useState<boolean>(false)
   const handleChecked = () => {
     setIsChecked(state => !state)
@@ -16,8 +16,7 @@ export const CheckBox: React.FunctionComponent<{ id: string }> = ({ id }) => {
         return task
       }
     })
-
-    console.log(`taskChecked =>`, taskChecked)
+    updateTasks(taskChecked)
   }
   return (
     <TouchableWithoutFeedback onPress={handleChecked}>

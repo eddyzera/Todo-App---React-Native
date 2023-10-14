@@ -5,7 +5,9 @@ import { styles } from './styles'
 import { CheckBox } from '../CheckBox'
 import { TaskProps } from '../../provider/ProviderState'
 
-export const Task: React.FunctionComponent<TaskProps> = ({ checked, id, title }) => {
+type Task = Omit<TaskProps, "checked">
+
+export const Task: React.FunctionComponent<Task> = ({ id, title }) => {
   return (
     <View style={styles.container}>
       <CheckBox id={id} />
