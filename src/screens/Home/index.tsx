@@ -10,7 +10,6 @@ import { useAppContext } from '../../hooks/useAppContext'
 
 export const Home: React.FunctionComponent = () => {
   const { tasks } = useAppContext()
-  console.log(`task =>`, tasks)
   return (
     <View style={styles.body}>
       <Header />

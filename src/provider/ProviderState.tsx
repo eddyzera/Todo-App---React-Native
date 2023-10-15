@@ -11,7 +11,8 @@ interface ProviderStateContextProps {
   createdTask: number,
   completedTasks: number,
   addNewTask: (task: TaskProps) => void,
-  updateTasks: (tasks: Array<TaskProps>) => void
+  updateTasks: (tasks: Array<TaskProps>) => void,
+  removeTask: (id: string) => void
 }
 
 interface ProviderStateProps {
@@ -23,7 +24,8 @@ export const ProviderStateContext = createContext<ProviderStateContextProps>({
   completedTasks: 0,
   createdTask: 0,
   addNewTask: () => {},
-  updateTasks: () => {}
+  updateTasks: () => {},
+  removeTask: (id) => {}
 })
 
 export const ProviderState: React.FunctionComponent<ProviderStateProps> = ({
@@ -51,6 +53,11 @@ export const ProviderState: React.FunctionComponent<ProviderStateProps> = ({
     setCompletedTasks(total)
   }
 
+  const removeTask = (id: string) => {
+    const updatedTask = tasks.filter(task => task.id !== id)
+    setTasks([...updatedTask])
+  }
+
   useEffect(() => {
     calculateTotalTasksCreated()
     calculateTotalTasksCompleted()
@@ -62,7 +69,8 @@ export const ProviderState: React.FunctionComponent<ProviderStateProps> = ({
       createdTask,
       completedTasks,
       addNewTask,
-      updateTasks
+      updateTasks,
+      removeTask
     }}>
       {children}
     </ProviderStateContext.Provider>
