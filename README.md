@@ -1,4 +1,4 @@
-![group](https://github.com/eddyzera/Todo-App---React-Native/assets/60861927/170516c5-031a-462a-91d5-1c07ed608957)# ToDo
+# ToDO App - React Native
 ToDo List é uma aplicação mobile de criação e controle de tarefas.
 Esse projeto é um dos desafios da trilha de React Native do Ignite, nosso bootcamp completo de especialização em React, React Native e Node.js.
 
