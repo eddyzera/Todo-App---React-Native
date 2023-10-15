@@ -13,6 +13,13 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 8
   },
+  textChecked: {
+    width: '80%',
+    fontSize: 14,
+    color: '#808080',
+    textDecorationLine: 'line-through',
+    textDecorationColor: '#808080'
+  },
   text: {
     width: '80%',
     fontSize: 14,

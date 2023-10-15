@@ -23,7 +23,7 @@ export const Home: React.FunctionComponent = () => {
           <FlatList
           data={tasks}
           renderItem={({ item }) => (
-            <Task id={item.id} title={item.title} />
+            <Task id={item.id} title={item.title} checked={item.checked} />
           )}
         />
         ) }
